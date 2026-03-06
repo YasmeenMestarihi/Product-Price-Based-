@@ -6,11 +6,11 @@
     'description': """
 <div class="oe_module_desc">
     <p>
-        <strong>Why this module?</strong> When customers ask for an amount in money (e.g. &quot;I want 5 JOD of grapes&quot;) instead of a quantity, the cashier can enter the <strong>total price</strong> directly. The system calculates the quantity automatically — no mental math, correct inventory and invoicing.
+        <strong>Why this module?</strong> When customers ask for an amount in money (e.g. &quot;I want 5 JOD of grapes&quot;) instead of a quantity, the cashier can enter the <strong>total price</strong> directly. The system calculates the quantity automatically - no mental math, correct inventory and invoicing.
     </p>
     <p><strong>Key benefits:</strong></p>
     <ul>
-        <li>Sell by total amount (e.g. 10.00) instead of quantity — ideal for weighed products, bakery, deli.</li>
+        <li>Sell by total amount (e.g. 10.00) instead of quantity - ideal for weighed products, bakery, deli.</li>
         <li>Per-product control: enable &quot;Price-based in POS&quot; only for the products that need it.</li>
         <li>Unit price stays fixed; only quantity is updated. Inventory and financial movements remain accurate.</li>
     </ul>
@@ -19,7 +19,7 @@
     <p>
         Adds a <strong>Total Price</strong> button to the Point of Sale control buttons. When the selected order line
         is for a price-based product, the cashier can enter the desired total amount; the system
-        computes and sets the quantity (Qty = Total ÷ Unit Price). Unit price is never changed.
+        computes and sets the quantity (Qty = Total / Unit Price). Unit price is never changed.
     </p>
 
     <h2>Per-product control</h2>
@@ -32,9 +32,9 @@
     <p>
         <img src="product-price-based-field.png" alt="Product form: Point of Sale tab with Price-based in POS enabled" class="img-fluid" style="max-width: 100%;"/>
     </p>
-    <p class="text-muted"><em>Product form — Point of Sale tab: enable "Price-based in POS" for the product. The Total Price button in POS is then available for this product.</em></p>
+    <p class="text-muted"><em>Product form - Point of Sale tab: enable "Price-based in POS" for the product. The Total Price button in POS is then available for this product.</em></p>
     <p>
-        <img src="product-without-price-based-field.png" alt="Product form: Price-based in POS disabled — Total Price button not available for this product in POS" class="img-fluid" style="max-width: 100%;"/>
+        <img src="product-without-price-based-field.png" alt="Product form: Price-based in POS disabled - Total Price button not available for this product in POS" class="img-fluid" style="max-width: 100%;"/>
     </p>
     <p class="text-muted"><em>Product with "Price-based in POS" disabled: in POS the Total Price button stays disabled for this product; only products with the field enabled can use it.</em></p>
 
@@ -49,7 +49,7 @@
         <li>In the product form, open the <strong>Point of Sale</strong> tab. Enable the <strong>Price-based in POS</strong> checkbox (below "Is a Weighed Product?").</li>
         <li>In the POS session, add that product to the order and select its order line.</li>
         <li>The <strong>Total Price</strong> button in the control-buttons area becomes clickable.</li>
-        <li>Click <strong>Total Price</strong>. Enter the desired total (e.g. <code>2</code>). The system computes: <strong>Qty = EnteredTotal ÷ UnitPrice</strong>.</li>
+        <li>Click <strong>Total Price</strong>. Enter the desired total (e.g. <code>2</code>). The system computes: <strong>Qty = EnteredTotal / UnitPrice</strong>.</li>
         <li>The order line quantity is updated; unit price and line total reflect the entered amount.</li>
     </ol>
     <p>
@@ -62,7 +62,7 @@
         <img src="pos-enter-total-price-popup.png" alt="Total Price popup: Enter total price" class="img-fluid" style="max-width: 100%;"/>
     </p>
     <p class="text-muted">
-        <em>Step 3: A popup appears — <strong>Enter total price:</strong> Type the amount (e.g. <strong>5</strong>) and click <strong>OK</strong>. The system will update the line quantity automatically.</em>
+        <em>Step 3: A popup appears - <strong>Enter total price:</strong> Type the amount (e.g. <strong>5</strong>) and click <strong>OK</strong>. The system will update the line quantity automatically.</em>
     </p>
     <p>
         <img src="pos-total-price-success.png" alt="Success: quantity and total updated" class="img-fluid" style="max-width: 100%;"/>
@@ -80,7 +80,7 @@
         <img src="pos-total-price-button-disabled-non-price-based.png" alt="POS with non-price-based product selected: Total Price button disabled" class="img-fluid" style="max-width: 100%;"/>
     </p>
     <p class="text-muted">
-        <em>For a product that does <strong>not</strong> have "Price-based in POS" enabled (e.g. Bagel), the Total Price button stays disabled. You cannot sell it by the customer's requested total price — only by quantity and unit price.</em>
+        <em>For a product that does <strong>not</strong> have "Price-based in POS" enabled (e.g. Bagel), the Total Price button stays disabled. You cannot sell it by the customer's requested total price - only by quantity and unit price.</em>
     </p>
 
     <h2>Edge cases</h2>
