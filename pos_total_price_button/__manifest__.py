@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "POS Price-based Products",
+    'name': "POS Price based Products",
     'version': "19.0.1.0.0",
     'summary': "Enter total price in POS; quantity is computed automatically for price-based products.",
     'description': """
